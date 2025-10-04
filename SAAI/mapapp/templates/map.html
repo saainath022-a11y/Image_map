@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% load static %}
+<title>My Area</title>
+</head>
+<body>
+<h1 align="center">
+  <font color="yellow"><b>Tondiarpet</b></font>
+</h1>
+<h3 align="center">
+  <font color="red"><b>Saainath.B</b></font>
+</h3>
+
+<center> 
+  <img src="{% static 'map.png' %}" usemap="#MyArea" width="1450" height="610" alt="My Area Map">
+
+  <map name="MyArea">
+    <area shape="poly" coords="776,228,955,228,1073,285,1061,278" title="Home" href="{% url 'home' %}">
+    <area shape="rect" coords="900,400,1000,470" title="Apollo" href="{% url 'apollo' %}">
+    <area shape="rect" coords="900,400,1000,500" title="SS Hyderabad" href="{% url 'sshyderabad' %}">
+    <area shape="rect" coords="650,480,700,450" title="Ovenstory Pizza" href="{% url 'ovenstory' %}">
+    <area shape="rect" coords="1100,140,1200,160" title="Washermenpet Metro" href="{% url 'washermenpet' %}">
+  </map>
+</center>
+</body>
+</html>
